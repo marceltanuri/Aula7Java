@@ -1,0 +1,68 @@
+{
+    "id": "a90e8d04-9342-4a7f-a729-c2c03afa69f6",
+    "handler": "calculaAprovacao",
+    "name": "Questão 1",
+    "type": "EVEREST",
+    "classification": [
+        {
+            "knowledgeArea": "Estruturas de Dados",
+            "category": "Ordenação",
+            "subCategory" : "algoritmos de ordenação"
+        }
+    ],
+    "public_cases": [
+        {
+            "name": "test-0",
+            "input": {
+                "nota1": 7.0,
+                "nota2": 8.0,
+                "nota3": 9.0,
+                "peso1": 2.0,
+                "peso2": 3.0,
+                "peso3": 5.0
+            },
+            "expected": "Aluno aprovado com a nota 8.3"
+        },
+        {
+            "name": "test-1",
+            "input": {
+                "nota1": 5.0,
+                "nota2": 6.0,
+                "nota3": 7.0,
+                "peso1": 2.0,
+                "peso2": 3.0,
+                "peso3": 4.0
+            },
+            "expected": "Aluno reprovado com a nota 6.1"
+        }
+    ],
+    "private_cases": [
+        {
+            "name": "test-2",
+            "input": {
+                "nota1": 10.0,
+                "nota2": 10.0,
+                "nota3": 10.0,
+                "peso1": 3.0,
+                "peso2": 3.0,
+                "peso3": 4.0
+            },
+            "expected": "Aluno aprovado com a nota 10.0"
+        },
+        {
+            "name": "test-3",
+            "input": {
+                "nota1": 3.0,
+                "nota2": 4.0,
+                "nota3": 5.0,
+                "peso1": 1.0,
+                "peso2": 2.0,
+                "peso3": 7.0
+            },
+            "expected": "Aluno reprovado com a nota 4.6"
+        }
+    ],
+    "templates": {
+        "java17": "public class Solution {\r\n    public static String calculaAprovacao(double nota1, double nota2, double nota3, double peso1, double peso2, double peso3) {\r\n        return \"\";\r\n    }\r\n}"
+    }
+}
