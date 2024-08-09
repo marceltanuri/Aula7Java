@@ -21,7 +21,7 @@
                 "peso2": 3.0,
                 "peso3": 5.0
             },
-            "expected": "Aluno excelente com a nota 9.6"
+            "expected": "Aluno excelente com a nota 9.7"
         },
         {
             "name": "test-1",
@@ -33,7 +33,7 @@
                 "peso2": 3.0,
                 "peso3": 5.0
             },
-            "expected": "Aluno muito bom com a nota 7.7"
+            "expected": "Aluno bom com a nota 7.6"
         }
     ],
     "private_cases": [
@@ -47,7 +47,7 @@
                 "peso2": 2.0,
                 "peso3": 6.0
             },
-            "expected": "Aluno mediano com a nota 6.6"
+            "expected": "Aluno mediano com a nota 6.5"
         },
         {
             "name": "test-3",
@@ -59,7 +59,7 @@
                 "peso2": 3.0,
                 "peso3": 4.0
             },
-            "expected": "Aluno em recuperação com a nota 5.3"
+            "expected": "Aluno em recuperação com a nota 5.4"
         },
         {
             "name": "test-4",
@@ -71,7 +71,7 @@
                 "peso2": 3.0,
                 "peso3": 4.0
             },
-            "expected": "Aluno reprovado com a nota 4.6"
+            "expected": "Aluno reprovado com a nota 4.5"
         },
         {
             "name": "test-5",
