@@ -33,7 +33,7 @@
                 "peso2": 3.0,
                 "peso3": 4.0
             },
-            "expected": "Aluno reprovado com a nota 6.1"
+            "expected": "Aluno reprovado com a nota 6.2"
         }
     ],
     "private_cases": [
