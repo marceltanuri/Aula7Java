@@ -1,65 +1,89 @@
 {
-    "id": "a90e8d04-9342-4a7f-a729-c2c03afa69f6",
+    "id": "b9f8b3a9-5461-44a6-8f4e-2b3455b72a0c",
     "handler": "calculaAprovacao",
-    "name": "Questão 1",
+    "name": "Cálculo de Aprovação com Diferenciação",
     "type": "EVEREST",
     "classification": [
         {
-            "knowledgeArea": "Estruturas de Dados",
-            "category": "Ordenação",
-            "subCategory" : "algoritmos de ordenação"
+            "knowledgeArea": "Programação",
+            "category": "Condicionais",
+            "subCategory": "Estruturas de Decisão"
         }
     ],
     "public_cases": [
         {
             "name": "test-0",
             "input": {
-                "nota1": 7.0,
-                "nota2": 8.0,
-                "nota3": 9.0,
+                "nota1": 9.0,
+                "nota2": 9.5,
+                "nota3": 10.0,
                 "peso1": 2.0,
                 "peso2": 3.0,
                 "peso3": 5.0
             },
-            "expected": "Aluno aprovado com a nota 8.3"
+            "expected": "Aluno excelente com a nota 9.6"
         },
         {
             "name": "test-1",
             "input": {
-                "nota1": 5.0,
-                "nota2": 6.0,
-                "nota3": 7.0,
+                "nota1": 7.0,
+                "nota2": 8.0,
+                "nota3": 7.5,
                 "peso1": 2.0,
                 "peso2": 3.0,
-                "peso3": 4.0
+                "peso3": 5.0
             },
-            "expected": "Aluno reprovado com a nota 6.2"
+            "expected": "Aluno muito bom com a nota 7.7"
         }
     ],
     "private_cases": [
         {
             "name": "test-2",
             "input": {
-                "nota1": 10.0,
-                "nota2": 10.0,
-                "nota3": 10.0,
-                "peso1": 3.0,
-                "peso2": 3.0,
-                "peso3": 4.0
+                "nota1": 6.0,
+                "nota2": 6.5,
+                "nota3": 6.7,
+                "peso1": 2.0,
+                "peso2": 2.0,
+                "peso3": 6.0
             },
-            "expected": "Aluno aprovado com a nota 10.0"
+            "expected": "Aluno mediano com a nota 6.6"
         },
         {
             "name": "test-3",
             "input": {
-                "nota1": 3.0,
-                "nota2": 4.0,
-                "nota3": 5.0,
-                "peso1": 1.0,
-                "peso2": 2.0,
-                "peso3": 7.0
+                "nota1": 5.0,
+                "nota2": 5.5,
+                "nota3": 5.5,
+                "peso1": 3.0,
+                "peso2": 3.0,
+                "peso3": 4.0
+            },
+            "expected": "Aluno em recuperação com a nota 5.3"
+        },
+        {
+            "name": "test-4",
+            "input": {
+                "nota1": 4.0,
+                "nota2": 4.5,
+                "nota3": 4.9,
+                "peso1": 3.0,
+                "peso2": 3.0,
+                "peso3": 4.0
             },
             "expected": "Aluno reprovado com a nota 4.6"
+        },
+        {
+            "name": "test-5",
+            "input": {
+                "nota1": 8.5,
+                "nota2": 8.8,
+                "nota3": 8.9,
+                "peso1": 3.0,
+                "peso2": 3.0,
+                "peso3": 4.0
+            },
+            "expected": "Aluno muito bom com a nota 8.8"
         }
     ],
     "templates": {
