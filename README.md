@@ -2,16 +2,21 @@
 
 ## Descrição
 
-Implemente uma função `calculaAprovacao` em Java que receba três notas de um aluno, calcule a média ponderada dessas notas e determine se o aluno foi aprovado ou reprovado. A função deve retornar uma string indicando o resultado.
+Implemente uma função `calculaAprovacao` em Java que receba três notas de um aluno, os respectivos pesos dessas notas, calcule a média ponderada e classifique o aluno em uma das seis categorias abaixo. A função deve retornar uma string indicando a classificação e a média.
 
 ### Regras de Negócio
 
 - A função deve receber três notas e seus respectivos pesos (`nota1`, `nota2`, `nota3`, `peso1`, `peso2`, `peso3`) como valores `double`.
 - A média ponderada deve ser calculada da seguinte forma: Multiplicar cada nota pelo seu respectivo peso e somar todos os resultados. Depois, essa soma é dividida pela soma dos pesos.
 
+### Classificações
 
-- Se a média ponderada for maior ou igual a 7.0, o aluno é considerado **aprovado**.
-- Se a média ponderada for menor que 7.0, o aluno é considerado **reprovado**.
+- **Nota >= 9.0:** "Aluno excelente com a nota X"
+- **8.0 <= Nota < 9.0:** "Aluno muito bom com a nota X"
+- **7.0 <= Nota < 8.0:** "Aluno bom com a nota X"
+- **6.0 <= Nota < 7.0:** "Aluno mediano com a nota X"
+- **5.0 <= Nota < 6.0:** "Aluno em recuperação com a nota X"
+- **Nota < 5.0:** "Aluno reprovado com a nota X"
 
 ### Retorno
 
@@ -23,15 +28,15 @@ Implemente uma função `calculaAprovacao` em Java que receba três notas de um 
 ### Exemplo 1
 
 ```java 
-"input": {
-                "nota1": 7.0,
-                "nota2": 8.0,
-                "nota3": 9.0,
+ "input": {
+                "nota1": 9.0,
+                "nota2": 9.5,
+                "nota3": 10.0,
                 "peso1": 2.0,
                 "peso2": 3.0,
                 "peso3": 5.0
             },
-            "expected": "Aluno aprovado com a nota 8.3"
+            "expected": "Aluno excelente com a nota 9.6"
 ```
 
 
@@ -40,14 +45,14 @@ Implemente uma função `calculaAprovacao` em Java que receba três notas de um 
 
 ```java
 "input": {
-                "nota1": 5.0,
-                "nota2": 6.0,
-                "nota3": 7.0,
+                "nota1": 7.0,
+                "nota2": 8.0,
+                "nota3": 7.5,
                 "peso1": 2.0,
                 "peso2": 3.0,
-                "peso3": 4.0
+                "peso3": 5.0
             },
-            "expected": "Aluno reprovado com a nota 6.1"
+            "expected": "Aluno muito bom com a nota 7.7"
 ```
 
 ## Tarefa
