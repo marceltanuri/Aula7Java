@@ -6,13 +6,9 @@ Implemente uma função `calculaAprovacao` em Java que receba três notas de um 
 
 ### Regras de Negócio
 
-- A função deve receber três notas (`nota1`, `nota2`, `nota3`) como valores `double`.
-- As notas possuem pesos diferentes: `nota1` tem peso 2, `nota2` tem peso 3, e `nota3` tem peso 5.
-- A média ponderada deve ser calculada da seguinte forma:
+- A função deve receber três notas e seus respectivos pesos (`nota1`, `nota2`, `nota3`, `peso1`, `peso2`, `peso3`) como valores `double`.
+- A média ponderada deve ser calculada da seguinte forma: Multiplicar cada nota pelo seu respectivo peso e somar todos os resultados. Depois, essa soma é dividida pela soma dos pesos.
 
-  \[
-  \text{Média Ponderada} = \frac{\text{nota1} \times 2 + \text{nota2} \times 3 + \text{nota3} \times 5}{10}
-  \]
 
 - Se a média ponderada for maior ou igual a 7.0, o aluno é considerado **aprovado**.
 - Se a média ponderada for menor que 7.0, o aluno é considerado **reprovado**.
@@ -26,37 +22,32 @@ Implemente uma função `calculaAprovacao` em Java que receba três notas de um 
 
 ### Exemplo 1
 
-**Entrada:**
-```java
-calculaAprovacao(7.0, 8.0, 9.0);
+```java 
+"input": {
+                "nota1": 7.0,
+                "nota2": 8.0,
+                "nota3": 9.0,
+                "peso1": 2.0,
+                "peso2": 3.0,
+                "peso3": 5.0
+            },
+            "expected": "Aluno aprovado com a nota 8.3"
 ```
 
-**Saída:**
-```
-"Aluno aprovado com a nota 8.0"
-```
 
 ### Exemplo 2
 
-**Entrada:**
+
 ```java
-calculaAprovacao(5.0, 6.0, 7.0);
-```
-
-**Saída:**
-```
-"Aluno reprovado com a nota 6.2"
-```
-### Exemplo 3
-
-**Entrada:**
-```java
-calculaAprovacao(10.0, 10.0, 10.0);
-```
-
-**Saída:**
-```
-"Aluno aprovado com a nota 10.0"
+"input": {
+                "nota1": 5.0,
+                "nota2": 6.0,
+                "nota3": 7.0,
+                "peso1": 2.0,
+                "peso2": 3.0,
+                "peso3": 4.0
+            },
+            "expected": "Aluno reprovado com a nota 6.1"
 ```
 
 ## Tarefa
@@ -64,7 +55,7 @@ Implemente a função calculaAprovacao de forma que todos os casos de teste seja
 
 ```java
 public class Solution {
-    public static String calculaAprovacao(double nota1, double nota2, double nota3) {
+    public static String calculaAprovacao(double nota1, double nota2, double nota3, double peso1, double peso2, double peso3) {
         // Calcule a média ponderada e retorne a String adequada.
         return "";
     }
