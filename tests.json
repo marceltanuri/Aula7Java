@@ -1,92 +1,45 @@
 {
-    "id": "b9f8b3a9-5461-44a6-8f4e-2b3455b72a0c",
-    "handler": "calculaAprovacao",
-    "name": "Cálculo de Aprovação com Diferenciação",
-    "type": "EVEREST",
-    "classification": [
-        {
-            "knowledgeArea": "Programação",
-            "category": "Condicionais",
-            "subCategory": "Estruturas de Decisão"
-        }
-    ],
-    "public_cases": [
-        {
-            "name": "test-0",
-            "input": {
-                "nota1": 9.0,
-                "nota2": 9.5,
-                "nota3": 10.0,
-                "peso1": 2.0,
-                "peso2": 3.0,
-                "peso3": 5.0
-            },
-            "expected": "Aluno excelente com a nota 9.7"
-        },
-        {
-            "name": "test-1",
-            "input": {
-                "nota1": 7.0,
-                "nota2": 8.0,
-                "nota3": 7.5,
-                "peso1": 2.0,
-                "peso2": 3.0,
-                "peso3": 5.0
-            },
-            "expected": "Aluno bom com a nota 7.6"
-        }
-    ],
-    "private_cases": [
-        {
-            "name": "test-2",
-            "input": {
-                "nota1": 6.0,
-                "nota2": 6.5,
-                "nota3": 6.7,
-                "peso1": 2.0,
-                "peso2": 2.0,
-                "peso3": 6.0
-            },
-            "expected": "Aluno mediano com a nota 6.5"
-        },
-        {
-            "name": "test-3",
-            "input": {
-                "nota1": 5.0,
-                "nota2": 5.5,
-                "nota3": 5.5,
-                "peso1": 3.0,
-                "peso2": 3.0,
-                "peso3": 4.0
-            },
-            "expected": "Aluno em recuperação com a nota 5.4"
-        },
-        {
-            "name": "test-4",
-            "input": {
-                "nota1": 4.0,
-                "nota2": 4.5,
-                "nota3": 4.9,
-                "peso1": 3.0,
-                "peso2": 3.0,
-                "peso3": 4.0
-            },
-            "expected": "Aluno reprovado com a nota 4.5"
-        },
-        {
-            "name": "test-5",
-            "input": {
-                "nota1": 8.5,
-                "nota2": 8.8,
-                "nota3": 8.9,
-                "peso1": 3.0,
-                "peso2": 3.0,
-                "peso3": 4.0
-            },
-            "expected": "Aluno muito bom com a nota 8.8"
-        }
-    ],
-    "templates": {
-        "java17": "public class Solution {\r\n    public static String calculaAprovacao(double nota1, double nota2, double nota3, double peso1, double peso2, double peso3) {\r\n        return \"\";\r\n    }\r\n}"
+  "id": "f42a5c9b-723c-48e5-8b5a-6321c0000001",
+  "handler": "obterHabilidade",
+  "name": "Determinação da Habilidade do Personagem",
+  "type": "EVEREST",
+  "classification": [
+    {
+      "knowledgeArea": "Programação",
+      "category": "Condicionais",
+      "subCategory": "Estruturas de Decisão"
     }
+  ],
+  "public_cases": [
+    {
+      "name": "test_guerreiro",
+      "input": 1,
+      "expected": "Ataque poderoso"
+    },
+    {
+      "name": "test_mago",
+      "input": 2,
+      "expected": "Lançamento de feitiço"
+    }
+  ],
+  "private_cases": [
+    {
+      "name": "test_arqueiro",
+      "input": 3,
+      "expected": "Tiro certeiro"
+    },
+    {
+      "name": "test_ladrao",
+      "input": 4,
+      "expected": "Esquiva"
+    },
+    {
+      "name": "test_classe_invalida",
+      "input": 5,
+      "expected": "Habilidade desconhecida"
+    }
+  ],
+  "templates": {
+    "java17": "public class Solution {\n  public static String obterHabilidade(int classe) {\n    // Implementação da função\n  }\n}"
+  }
 }
